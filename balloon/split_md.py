@@ -257,7 +257,4 @@ def main() -> None:
 if __name__ == "__main__":
     main()
 
-# usage  python3 split_md.py test/
-# todo add the api call to gpt
-# todo convert the retorning call in a jsonl file
-# todo see what to do with eval
+# usage  python3 split_md.py docs
