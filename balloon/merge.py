@@ -10,8 +10,12 @@ def main() -> None:
     df2 = pd.read_json('dataset_2.jsonl', lines=True)
     print("Number of rows in dataset2:", df2.shape[0])
 
+    # Read the third dataset
+    df3 = pd.read_json('dataset_3.jsonl', lines=True)
+    print("Number of rows in dataset3:", df3.shape[0])
+
     # Concatenate the two datasets
-    combined_df = pd.concat([df1, df2], ignore_index=True)
+    combined_df = pd.concat([df1, df2, df3], ignore_index=True)
     print("Total number of rows in combined dataset:", combined_df.shape[0])
 
     # Assign new unique IDs starting from 1
